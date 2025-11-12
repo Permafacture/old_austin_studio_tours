@@ -2,6 +2,10 @@ requests>=2.31.0
 beautifulsoup4>=4.12.0
 lxml>=4.9.0
 
-# Optional: For JavaScript-rendered content
+# For JavaScript rendering (lightweight alternative to Selenium)
+# Recommended for getting addresses/coordinates
+requests-html>=0.10.0
+
+# Optional: For full browser automation (heavy, but most reliable)
 selenium>=4.15.0
 webdriver-manager>=4.0.0
