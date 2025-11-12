@@ -1,141 +1,128 @@
-# Austin Studio Tour Map Scraper
+# Austin Studio Tour Location Scraper
 
-Scripts to scrape location data from the Austin Studio Tour website and export to CSV.
+Python script to scrape detailed location data from the Austin Studio Tour website and export to CSV.
 
-## Problem: JavaScript-Rendered Content
+## Overview
 
-The Austin Studio Tour website (`https://www.atxstudiotour.com/explore/?view=map`) uses **JavaScript to dynamically load** map markers, addresses, and coordinates. This means:
+This project scrapes all 317 locations from the 23rd Annual Austin Studio Tour, extracting:
+- Location number
+- Physical address
+- Featured hosts (with images and links)
+- Featured artists (with images and links)
 
-- Location addresses are **NOT in the static HTML**
-- Coordinates are **NOT available via WordPress REST API**
-- Map data is loaded via **AJAX/JavaScript after page load**
+## Usage
 
-## Solutions
-
-### Option 1: requests library (Limited - Location Names Only)
-
-**File:** `scrape_studios.py`
-
-This script uses only the Python `requests` library but has limitations:
-
-```bash
-python3 scrape_studios.py
-```
-
-**What it gets:**
-- ✅ 317 location IDs
-- ✅ Location names
-- ✅ Location URLs
-- ✅ Location types
-- ❌ No addresses
-- ❌ No coordinates
-
-**Output:** `austin_studio_tour_locations.csv` (without addresses/coordinates)
-
-### Option 2: Selenium (Full Data)
-
-**File:** `scrape_studios_selenium.py`
-
-This script uses Selenium to execute JavaScript and extract full location data.
-
-**Installation:**
 ```bash
 # Install dependencies
-pip install selenium webdriver-manager
+pip install -r requirements.txt
 
-# For Ubuntu/Debian - install Chrome/Chromium
-sudo apt-get update
-sudo apt-get install -y chromium-browser chromium-chromedriver
+# Scrape all locations (takes ~3 minutes with rate limiting)
+python3 scrape_location_details.py
+
+# Test with limited locations
+python3 scrape_location_details.py --max-locations 10
+
+# Custom output file
+python3 scrape_location_details.py --output my_locations.csv
 ```
 
-**Usage:**
-```bash
-python3 scrape_studios_selenium.py
+## Output Format
+
+The script generates a CSV file with the following columns:
+
+| Column | Description | Example |
+|--------|-------------|---------|
+| **number** | Location number | 6 |
+| **address** | Street address | 710 W Cesar Chavez St, Austin, TX 78701 |
+| **hosts** | Pipe-delimited list of hosts with HTML | `<a href="..."><img src="...">The Gallery at Central Library</a>` |
+| **artists** | Pipe-delimited list of artists with HTML | `<a href="..."><img src="...">Robin Kang</a>` |
+| **url** | Location page URL | https://www.atxstudiotour.com/location/location-6/ |
+
+### HTML Format
+
+Hosts and artists are formatted as HTML with embedded images:
+```html
+<a href="artist_url"><img src="image_url">Artist Name</a> | <a href="artist2_url"><img src="image2_url">Artist 2</a>
 ```
 
-**What it can get:**
-- ✅ Location names
-- ✅ Addresses (from individual pages)
-- ✅ Coordinates (if available in page data)
-- ✅ Full location details
+Multiple items are separated by ` | ` (pipe with spaces).
 
 ## Files
 
-- `scrape_studios.py` - requests-only version (limited data)
-- `scrape_studios_selenium.py` - Selenium version (full data, requires browser)
-- `requirements.txt` - Python package dependencies
-- `austin_studio_tour_locations.csv` - Output CSV file
+- **`scrape_location_details.py`** - Main scraper script
+- **`austin_studio_tour_details.csv`** - Output file with all 317 locations
+- `requirements.txt` - Python dependencies
+- Old exploration files:
+  - `scrape_studios.py` - Initial exploration script
+  - `scrape_studios_selenium.py` - Selenium alternative (not needed)
+  - `austin_studio_tour_locations.csv` - Basic location list from API
+
+## Statistics
+
+From the complete scrape of all 317 locations:
+- **181 locations** have full addresses (57%)
+- **120 locations** have featured hosts (38%)
+- **286 locations** have featured artists (90%)
+
+Note: Some locations don't have complete information in the expected format on their pages, which is why not all fields are populated for every location.
 
 ## Technical Details
 
-### What We Discovered
+### Approach
 
-1. **WordPress REST API Available:**
-   - `/wp-json/wp/v2/location` - Returns basic location posts
-   - Does NOT include custom meta fields (address, coordinates)
-   - Total: 317 locations
+The script uses plain `requests` and `BeautifulSoup` to:
 
-2. **Custom Post Types:**
-   - `location` - Studio locations
-   - `host` - Event hosts
-   - `art` - Artists and art groups
-   - `tour` - Tour information
+1. Fetch all location URLs from the WordPress REST API
+   - Endpoint: `https://www.atxstudiotour.com/wp-json/wp/v2/location`
+   - 317 total locations
 
-3. **Map Implementation:**
-   - Uses JetEngine WordPress plugin
-   - Google Maps integration
-   - Markers loaded via JavaScript
-   - Address geocoding happens client-side
+2. Visit each location page and extract:
+   - Location number from `<h1>` tag
+   - Address using regex pattern matching on heading elements
+   - Hosts from "Featured Hosts" section (`.jet-listing-grid__item` elements)
+   - Artists from "Featured Artists & Art Groups" section
 
-4. **Data Structure:**
-   - Location pages exist at: `/location/location-{number}/`
-   - Addresses are rendered in the page after JavaScript execution
-   - Coordinates stored but not exposed via API
+3. For each host/artist, extract:
+   - Name from heading element
+   - Image URL from `<img src>` attribute
+   - Link URL from `<a href>` attribute
 
-### Why requests Alone Isn't Enough
+### Rate Limiting
 
-The website uses modern JavaScript frameworks that render content dynamically:
+The script includes a **0.5 second delay** between requests to avoid overwhelming the server. Scraping all 317 locations takes approximately 3 minutes.
 
-```javascript
-// Data is loaded like this (after page load):
-JetEngine.ajax({
-    action: 'get_map_markers',
-    // ...
-});
-```
+### Why This Approach?
 
-The `requests` library fetches only the initial HTML, which doesn't contain the dynamically loaded content.
+Initially explored using JavaScript rendering (Selenium, requests-html), but discovered that:
+- The location pages are rendered server-side (static HTML)
+- All needed data is available in the initial HTML response
+- No JavaScript execution required
+- Much faster and more reliable than browser automation
 
-## Data Schema
-
-The CSV output includes these fields:
-
-| Field | Description | Example |
-|-------|-------------|---------|
-| id | WordPress post ID | 14004 |
-| title | Location name | Location 319 |
-| address | Full street address | 111 E 8th St, Austin, TX 78701, USA |
-| latitude | Latitude coordinate | 30.2672 |
-| longitude | Longitude coordinate | -97.7431 |
-| location_type | Type of venue | [13] (Pop-up) |
-| url | Location page URL | https://www.atxstudiotour.com/location/location-319/ |
-
-## Recommendations
-
-1. **For quick location list:** Use `scrape_studios.py` (requests only)
-2. **For full data with addresses:** Use `scrape_studios_selenium.py` (Selenium)
-3. **For production use:** Consider caching results and rate limiting
-
-## Rate Limiting
-
-Both scripts include rate limiting to be respectful to the server:
-- 0.2 second delay between individual page requests
-- Progress indicators for long-running operations
-
-## Event Details
+## Event Information
 
 - **Event:** 23rd Annual Austin Studio Tour
 - **Dates:** November 8–9 & 15–16, 2025
 - **Time:** 12pm–6pm daily
 - **Locations:** 317 venues around Austin, Texas
 - **Participants:** 719 artists and art groups
+- **Website:** https://www.atxstudiotour.com/
+
+## Example Output
+
+Location 6 (from CSV):
+
+```csv
+6,"710 W Cesar Chavez St, Austin, TX 78701","<a href=""https://www.atxstudiotour.com/host/the-gallery-at-central-library/""><img src=""https://www.atxstudiotour.com/wp-content/uploads/2025/10/Robin_Kang_Butterfly_Effect.jpg"">The Gallery at Central Library</a>","<a href=""https://www.atxstudiotour.com/art/robin-kang/""><img src=""https://www.atxstudiotour.com/wp-content/uploads/2025/10/Kang_Firewheel_sm.jpg"">Robin Kang</a>",https://www.atxstudiotour.com/location/location-6/
+```
+
+## Requirements
+
+- Python 3.7+
+- requests
+- beautifulsoup4
+- lxml
+
+## License
+
+This is a data scraping tool for educational and informational purposes. Please respect the Austin Studio Tour website's terms of service and rate limits.
