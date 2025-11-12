@@ -95,15 +95,13 @@ class LocationDetailsScraper:
                 # Remove the trailing period if present
                 details['number'] = h1.get_text().strip().rstrip('.')
 
-            # Extract address using regex pattern
-            address_pattern = r'\d+\s+[NSEW]?\s*[A-Za-z\s]+(?:St|Street|Ave|Avenue|Blvd|Boulevard|Dr|Drive|Rd|Road|Ln|Lane|Way|Pkwy|Parkway|Ct|Court|Pl|Place),\s*Austin,?\s*TX\s*\d{5}'
-
-            # Look for address in h2 elements (most reliable)
+            # Extract address from h2 elements using page structure
+            # Addresses appear in h2.elementor-heading-title and contain "Austin" and "TX"
             for h2 in soup.find_all('h2', class_='elementor-heading-title'):
                 text = h2.get_text(separator=' ', strip=True)
-                match = re.search(address_pattern, text, re.IGNORECASE)
-                if match:
-                    details['address'] = match.group(0)
+                # Check if this looks like an address (contains Austin, TX and starts with a digit)
+                if 'Austin' in text and 'TX' in text and text and text[0].isdigit():
+                    details['address'] = text
                     break
 
             # Extract hosts
