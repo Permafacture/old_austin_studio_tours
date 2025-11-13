@@ -6,8 +6,41 @@ Takes a list of location numbers and outputs a KML file for Google Maps.
 
 import csv
 import argparse
+import re
 from typing import Dict, List, Optional
+from html.parser import HTMLParser
 from xml.sax.saxutils import escape
+
+
+def extract_links_from_html(html_string: str) -> List[tuple]:
+    """Extract clean links from HTML, returning list of (text, url) tuples."""
+    if not html_string:
+        return []
+
+    # Pattern to match: <a href="url"><img ...>text</a>
+    # We want to extract the url and text
+    pattern = r'<a\s+href="([^"]+)"[^>]*>(?:<img[^>]*>)?([^<]+)</a>'
+    matches = re.findall(pattern, html_string)
+
+    # Return list of (text, url) tuples, stripping whitespace from text
+    return [(text.strip(), url) for url, text in matches if text.strip()]
+
+
+def create_clean_html_links(items_string: str) -> List[str]:
+    """Parse HTML items string and return list of clean HTML links."""
+    if not items_string:
+        return []
+
+    # Split on pipe delimiter
+    items = [item.strip() for item in items_string.split('|')]
+
+    clean_links = []
+    for item in items:
+        links = extract_links_from_html(item)
+        for text, url in links:
+            clean_links.append(f'<a href="{escape(url)}">{escape(text)}</a>')
+
+    return clean_links
 
 
 def read_locations_csv(filepath: str) -> Dict[int, dict]:
@@ -52,18 +85,29 @@ def read_details_csv(filepath: str) -> Dict[int, dict]:
 def create_description_html(location_num: int, details: Optional[dict], location_url: str) -> str:
     """Create HTML description for KML placemark."""
     html_parts = [f'<h3>Location {location_num}</h3>']
+    sections = []
 
     if details:
+        # Process hosts
         if details.get('hosts'):
-            html_parts.append('<p><strong>Hosts:</strong><br/>')
-            html_parts.append(details['hosts'])
-            html_parts.append('</p>')
+            host_links = create_clean_html_links(details['hosts'])
+            if host_links:
+                host_html = '<p><strong>Hosts:</strong><br/>' + '<br/>'.join(host_links) + '</p>'
+                sections.append(host_html)
 
+        # Process artists
         if details.get('artists'):
-            html_parts.append('<p><strong>Artists:</strong><br/>')
-            html_parts.append(details['artists'])
-            html_parts.append('</p>')
+            artist_links = create_clean_html_links(details['artists'])
+            if artist_links:
+                artist_html = '<p><strong>Artists:</strong><br/>' + '<br/>'.join(artist_links) + '</p>'
+                sections.append(artist_html)
 
+    # Add sections with separators
+    if sections:
+        html_parts.append('<hr/>'.join(sections))
+        html_parts.append('<hr/>')
+
+    # Add view location link
     html_parts.append(f'<p><a href="{escape(location_url)}">View on ATX Studio Tour</a></p>')
 
     return ''.join(html_parts)
