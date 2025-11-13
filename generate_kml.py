@@ -19,21 +19,21 @@ class MissingCoordinatesError(Exception):
 
 
 def extract_links_from_html(html_string: str) -> List[tuple]:
-    """Extract clean links from HTML, returning list of (text, url) tuples."""
+    """Extract clean links from HTML, returning list of (text, url, img_src) tuples."""
     if not html_string:
         return []
 
-    # Pattern to match: <a href="url"><img ...>text</a>
-    # We want to extract the url and text
-    pattern = r'<a\s+href="([^"]+)"[^>]*>(?:<img[^>]*>)?([^<]+)</a>'
+    # Pattern to match: <a href="url"><img src="img_url">text</a>
+    # We want to extract the url, image src, and text
+    pattern = r'<a\s+href="([^"]+)"[^>]*>(?:<img\s+src="([^"]+)"[^>]*>)?([^<]+)</a>'
     matches = re.findall(pattern, html_string)
 
-    # Return list of (text, url) tuples, stripping whitespace from text
-    return [(text.strip(), url) for url, text in matches if text.strip()]
+    # Return list of (text, url, img_src) tuples, stripping whitespace from text
+    return [(text.strip(), url, img_src) for url, img_src, text in matches if text.strip()]
 
 
 def create_clean_html_links(items_string: str) -> List[str]:
-    """Parse HTML items string and return list of clean HTML links."""
+    """Parse HTML items string and return list of clean HTML links with images."""
     if not items_string:
         return []
 
@@ -43,8 +43,17 @@ def create_clean_html_links(items_string: str) -> List[str]:
     clean_links = []
     for item in items:
         links = extract_links_from_html(item)
-        for text, url in links:
-            clean_links.append(f'<a href="{escape(url)}">{escape(text)}</a>')
+        for text, url, img_src in links:
+            if img_src:
+                # Include image in the link
+                clean_links.append(
+                    f'<a href="{escape(url)}">'
+                    f'<img src="{escape(img_src)}" style="max-width:200px;height:auto;"/>'
+                    f'{escape(text)}</a>'
+                )
+            else:
+                # Just text link without image
+                clean_links.append(f'<a href="{escape(url)}">{escape(text)}</a>')
 
     return clean_links
 
