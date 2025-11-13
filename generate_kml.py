@@ -7,9 +7,15 @@ Takes a list of location numbers and outputs a KML file for Google Maps.
 import csv
 import argparse
 import re
+import sys
 from typing import Dict, List, Optional
 from html.parser import HTMLParser
 from xml.sax.saxutils import escape
+
+
+class MissingCoordinatesError(Exception):
+    """Raised when a requested location is missing coordinates"""
+    pass
 
 
 def extract_links_from_html(html_string: str) -> List[tuple]:
@@ -115,7 +121,29 @@ def create_description_html(location_num: int, details: Optional[dict], location
 
 def generate_kml(location_numbers: List[int], locations: Dict[int, dict],
                  details: Dict[int, dict], output_file: str) -> None:
-    """Generate KML file for specified locations."""
+    """
+    Generate KML file for specified locations.
+
+    Raises:
+        MissingCoordinatesError: If any requested location is not found or missing coordinates
+    """
+
+    # Validate all locations have coordinates before generating KML
+    for location_num in location_numbers:
+        if location_num not in locations:
+            raise MissingCoordinatesError(
+                f"Location {location_num} not found in locations data. "
+                f"Please check that the location exists in the CSV file."
+            )
+
+        location = locations[location_num]
+
+        if not location['latitude'] or not location['longitude']:
+            raise MissingCoordinatesError(
+                f"Location {location_num} has no coordinates. "
+                f"Address: {location.get('address', 'N/A')}. "
+                f"Please run geocode_addresses.py to geocode this location first."
+            )
 
     kml_parts = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -125,22 +153,8 @@ def generate_kml(location_numbers: List[int], locations: Dict[int, dict],
         '<description>Selected locations from the Austin Studio Tour</description>',
     ]
 
-    skipped_locations = []
-
     for location_num in location_numbers:
-        if location_num not in locations:
-            print(f"Warning: Location {location_num} not found in locations data")
-            skipped_locations.append(location_num)
-            continue
-
         location = locations[location_num]
-
-        # Skip if no coordinates available
-        if not location['latitude'] or not location['longitude']:
-            print(f"Warning: Location {location_num} has no coordinates, skipping")
-            skipped_locations.append(location_num)
-            continue
-
         location_details = details.get(location_num)
         description_html = create_description_html(
             location_num,
@@ -167,11 +181,8 @@ def generate_kml(location_numbers: List[int], locations: Dict[int, dict],
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write('\n'.join(kml_parts))
 
-    included_count = len(location_numbers) - len(skipped_locations)
     print(f"\nKML file generated: {output_file}")
-    print(f"Included {included_count} location(s)")
-    if skipped_locations:
-        print(f"Skipped {len(skipped_locations)} location(s): {', '.join(map(str, skipped_locations))}")
+    print(f"Included {len(location_numbers)} location(s)")
 
 
 def main():
@@ -202,16 +213,21 @@ def main():
 
     args = parser.parse_args()
 
-    print(f"Reading location data...")
-    locations = read_locations_csv(args.locations_csv)
-    print(f"Found {len(locations)} locations with coordinates")
+    try:
+        print(f"Reading location data...")
+        locations = read_locations_csv(args.locations_csv)
+        print(f"Found {len(locations)} locations with coordinates")
 
-    print(f"Reading details data...")
-    details = read_details_csv(args.details_csv)
-    print(f"Found {len(details)} locations with details")
+        print(f"Reading details data...")
+        details = read_details_csv(args.details_csv)
+        print(f"Found {len(details)} locations with details")
 
-    print(f"\nGenerating KML for locations: {', '.join(map(str, args.locations))}")
-    generate_kml(args.locations, locations, details, args.output)
+        print(f"\nGenerating KML for locations: {', '.join(map(str, args.locations))}")
+        generate_kml(args.locations, locations, details, args.output)
+
+    except MissingCoordinatesError as e:
+        print(f"\nError: {e}", file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == '__main__':
