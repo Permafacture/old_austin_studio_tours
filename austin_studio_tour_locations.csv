@@ -32,7 +32,7 @@ address,id,latitude,location_type,longitude,title,url
 "4615 Spicewood Springs Rd, Austin, TX 78759",13973,30.3755371,[18],-97.7621293,Location 288,https://www.atxstudiotour.com/location/location-288/
 "218 S Lamar Blvd, Ste 140, Austin, TX 78704",13972,30.263458,[8],-97.7580932,Location 287,https://www.atxstudiotour.com/location/location-287/
 "2307 Manor Rd, Ste 2135, Austin, TX 78722",13971,30.2838638,[7],-97.7174453,Location 286,https://www.atxstudiotour.com/location/location-286/
-"9909 FM 969, Bldg 6A, Austin, TX 78724",13970,,[10],,Location 285,https://www.atxstudiotour.com/location/location-285/
+"9909 FM 969, Bldg 6A, Austin, TX 78724",13970,30.2829525,[10],-97.6536147,Location 285,https://www.atxstudiotour.com/location/location-285/
 "901 Vargas Rd, Austin, TX 78741",13969,30.2334845,[9],-97.6938335,Location 284,https://www.atxstudiotour.com/location/location-284/
 "7107 E Riverside Dr, Austin, TX 78741",13968,30.2218087,[6],-97.695956,Location 283,https://www.atxstudiotour.com/location/location-283/
 "3106 Industrial Terrace, Austin, TX 78758",13967,30.381213,[5],-97.730859,Location 282,https://www.atxstudiotour.com/location/location-282/
@@ -82,7 +82,7 @@ address,id,latitude,location_type,longitude,title,url
 "7204 Bucknell Dr, Austin, TX 78723",13923,30.3212345,[15],-97.6729152,Location 237,https://www.atxstudiotour.com/location/location-237/
 "5801 Joe Sayers Ave, Austin, TX 78756",13922,30.3305425,[15],-97.7325844,Location 236,https://www.atxstudiotour.com/location/location-236/
 "3107 Garwood St, Austin, TX 78702",13921,30.2597815,[15],-97.705937,Location 235,https://www.atxstudiotour.com/location/location-235/
-"2008 Alexander Ave, Studio 8, Austin, TX 78722",13920,,[9],,Location 234,https://www.atxstudiotour.com/location/location-234/
+"2008 Alexander Ave, Studio 8, Austin, TX 78722",13920,30.2833869,[9],-97.7104083,Location 234,https://www.atxstudiotour.com/location/location-234/
 "2701 Zach Scott St, Austin, TX 78723",13919,30.2941721,[15],-97.6974124,Location 233,https://www.atxstudiotour.com/location/location-233/
 "2804 Oak Crest Ave, Austin, TX 78704",13918,30.2379095,[9],-97.7654928,Location 232,https://www.atxstudiotour.com/location/location-232/
 "4510 Placid Pl, Austin, TX 78731",13917,30.322452,[9],-97.75389,Location 231,https://www.atxstudiotour.com/location/location-231/
@@ -130,7 +130,7 @@ address,id,latitude,location_type,longitude,title,url
 "2256 Zach Scott St, Austin, TX 78723",13875,30.294454,[9],-97.701281,Location 189,https://www.atxstudiotour.com/location/location-189/
 "1309 Palo Duro Rd, Unit 2, Austin, TX 78757",13874,30.3313145,[9],-97.7308114,Location 188,https://www.atxstudiotour.com/location/location-188/
 "6401 Airport Blvd, Austin, TX 78752",13873,30.327269,[18],-97.714157,Location 187,https://www.atxstudiotour.com/location/location-187/
-"5311 Avenue F, Bldg 2, Austin, TX 78751",13872,,[9],,Location 186,https://www.atxstudiotour.com/location/location-186/
+"5311 Avenue F, Bldg 2, Austin, TX 78751",13872,30.3183015,[9],-97.7205244,Location 186,https://www.atxstudiotour.com/location/location-186/
 "1214 W 6th St, Ste 100, Austin, TX 78703",13871,30.2735402,[9],-97.758708,Location 185,https://www.atxstudiotour.com/location/location-185/
 "906 Bodark Ln, Austin, TX 78745",13870,30.19536,[15],-97.794044,Location 184,https://www.atxstudiotour.com/location/location-184/
 "1600 Virginia Ave, Unit A, Austin, TX 78704",13869,30.261492,[9],-97.7623935,Location 183,https://www.atxstudiotour.com/location/location-183/
@@ -144,7 +144,7 @@ address,id,latitude,location_type,longitude,title,url
 "1904 Pennsylvania Ave, Austin, TX 78702",13861,30.2720465,[9],-97.7189994,Location 175,https://www.atxstudiotour.com/location/location-175/
 "3508 E Cesar Chavez St, Austin, TX 78702",13860,30.2523955,[18],-97.7047618,Location 174,https://www.atxstudiotour.com/location/location-174/
 "1403 Garden St, Austin, TX 78702",13859,30.256383,[18],-97.731449,Location 173,https://www.atxstudiotour.com/location/location-173/
-"2111 4 Oaks Ln, Garage Studio, Austin, TX 78704",13858,,[15],,Location 172,https://www.atxstudiotour.com/location/location-172/
+"2111 4 Oaks Ln, Garage Studio, Austin, TX 78704",13858,30.252068,[15],-97.7889099,Location 172,https://www.atxstudiotour.com/location/location-172/
 "4204 Menchaca Rd, Austin, TX 78704",13857,30.23153,[6],-97.787775,Location 171,https://www.atxstudiotour.com/location/location-171/
 "4101 Guadalupe St, Austin, TX 78751",13856,30.306419,[6],-97.73545,Location 170,https://www.atxstudiotour.com/location/location-170/
 "5203 Brodie Ln, Austin, TX 78745",13855,30.2206283,[11],-97.8262379,Location 169,https://www.atxstudiotour.com/location/location-169/
@@ -197,7 +197,7 @@ address,id,latitude,location_type,longitude,title,url
 "727 Airport Blvd, Austin, TX 78702",13808,30.2543111,[18],-97.6925421,Location 122,https://www.atxstudiotour.com/location/location-122/
 "611 E 50th St, Austin, TX 78751",13807,30.3119605,[17],-97.7192319,Location 121,https://www.atxstudiotour.com/location/location-121/
 "3100 E 4th St, Austin, TX 78702",13806,30.254618,[17],-97.708048,Location 120,https://www.atxstudiotour.com/location/location-120/
-"3001 S Congress Ave, Fine Arts Center, Austin, TX 78704",13805,,[17],,Location 119,https://www.atxstudiotour.com/location/location-119/
+"3001 S Congress Ave, Fine Arts Center, Austin, TX 78704",13805,30.232551,[17],-97.7542933,Location 119,https://www.atxstudiotour.com/location/location-119/
 "1902 E 12th St, Austin, TX 78702",13804,30.273888,[16],-97.7197657,Location 118,https://www.atxstudiotour.com/location/location-118/
 "3706 Kerbey Ln, Austin, TX 78731",13803,30.3084916,[16],-97.7503325,Location 117,https://www.atxstudiotour.com/location/location-117/
 "4930 S Congress Ave, Ste C-301, Austin, TX 78745",13802,30.212939,[16],-97.771002,Location 116,https://www.atxstudiotour.com/location/location-116/
@@ -244,7 +244,7 @@ address,id,latitude,location_type,longitude,title,url
 "1202 W 6th St, Austin, TX 78703",13761,30.2731155,[8],-97.7573168,Location 75,https://www.atxstudiotour.com/location/location-75/
 "703 W 10th St, Austin, TX 77541",13760,29.6273119,[8],-96.0534301,Location 74,https://www.atxstudiotour.com/location/location-74/
 "2403 E 16th St, Austin, TX 78702",13759,30.2772557,[8],-97.7151459,Location 73,https://www.atxstudiotour.com/location/location-73/
-"6101 Highland Campus Dr, Bldg 2000, Austin, TX 78752",13758,,[8],,Location 72,https://www.atxstudiotour.com/location/location-72/
+"6101 Highland Campus Dr, Bldg 2000, Austin, TX 78752",13758,30.325885,[8],-97.713444,Location 72,https://www.atxstudiotour.com/location/location-72/
 "5809 Burnet Rd, Austin, TX 78756",13757,30.333789,[8],-97.739622,Location 71,https://www.atxstudiotour.com/location/location-71/
 "1717 E Cesar Chavez St, Austin, TX 78702",13756,30.257388,[8],-97.725707,Location 70,https://www.atxstudiotour.com/location/location-70/
 "705 Wallingford Bend Dr, Austin, TX 78752",13755,,[8],,Location 69,https://www.atxstudiotour.com/location/location-69/
@@ -255,21 +255,21 @@ address,id,latitude,location_type,longitude,title,url
 "916 Springdale Rd, Austin, TX 78702",13750,30.2607977,[9],-97.698512,Location 64,https://www.atxstudiotour.com/location/location-64/
 "916 Springdale Rd, Austin, TX 78702",13749,30.2607977,[8],-97.698512,Location 63,https://www.atxstudiotour.com/location/location-63/
 "916 Springdale Rd, Austin, TX 78702",13748,30.2607977,[18],-97.698512,Location 62,https://www.atxstudiotour.com/location/location-62/
-"916 Springdale Rd, Bldg 1, Ste 217, Austin, TX 78702",13747,,[18],,Location 61,https://www.atxstudiotour.com/location/location-61/
-"916 Springdale Rd, Bldg 3, Ste 102, Austin, TX 78702",13746,,[18],,Location 60,https://www.atxstudiotour.com/location/location-60/
-"916 Springdale Rd, Bldg 4, Ste 101, Austin, TX 78702",13745,,[11],,Location 59,https://www.atxstudiotour.com/location/location-59/
-"916 Springdale Rd, Bldg 1, Ste 201, Austin, TX 78702",13744,,[9],,Location 58,https://www.atxstudiotour.com/location/location-58/
-"916 Springdale Rd, Bldg 3, Ste 103, Austin, TX 78702",13743,,[8],,Location 57,https://www.atxstudiotour.com/location/location-57/
-"916 Springdale Rd, Bldg 2, Ste 107, Austin, TX 78702",13742,,[8],,Location 56,https://www.atxstudiotour.com/location/location-56/
-"916 Springdale Rd, Bldg 2, Ste 102, Austin, TX 78702",13741,,[8],,Location 55,https://www.atxstudiotour.com/location/location-55/
+"916 Springdale Rd, Bldg 1, Ste 217, Austin, TX 78702",13747,30.2607977,[18],-97.698512,Location 61,https://www.atxstudiotour.com/location/location-61/
+"916 Springdale Rd, Bldg 3, Ste 102, Austin, TX 78702",13746,30.2607977,[18],-97.698512,Location 60,https://www.atxstudiotour.com/location/location-60/
+"916 Springdale Rd, Bldg 4, Ste 101, Austin, TX 78702",13745,30.2607977,[11],-97.698512,Location 59,https://www.atxstudiotour.com/location/location-59/
+"916 Springdale Rd, Bldg 1, Ste 201, Austin, TX 78702",13744,30.2607977,[9],-97.698512,Location 58,https://www.atxstudiotour.com/location/location-58/
+"916 Springdale Rd, Bldg 3, Ste 103, Austin, TX 78702",13743,30.2607977,[8],-97.698512,Location 57,https://www.atxstudiotour.com/location/location-57/
+"916 Springdale Rd, Bldg 2, Ste 107, Austin, TX 78702",13742,30.2607977,[8],-97.698512,Location 56,https://www.atxstudiotour.com/location/location-56/
+"916 Springdale Rd, Bldg 2, Ste 102, Austin, TX 78702",13741,30.2607977,[8],-97.698512,Location 55,https://www.atxstudiotour.com/location/location-55/
 "3625 Menchaca Rd, Ste 101, Austin, TX 78704",13740,30.2372015,[8],-97.783139,Location 54,https://www.atxstudiotour.com/location/location-54/
 "3701 Drossett Dr, Ste 190, Austin, TX 78744",13739,30.211373,[8],-97.730039,Location 53,https://www.atxstudiotour.com/location/location-53/
 "1110 Barton Springs Rd, Austin, TX 78704",13738,30.2609935,[8],-97.7561768,Location 52,https://www.atxstudiotour.com/location/location-52/
-"5305 Bolm Rd, Bay 9, Austin, TX 78721",13737,,[8],,Location 51,https://www.atxstudiotour.com/location/location-51/
+"5305 Bolm Rd, Bay 9, Austin, TX 78721",13737,30.258306,[8],-97.691436,Location 51,https://www.atxstudiotour.com/location/location-51/
 "5419 Glissman Rd, Austin, TX 78702",13736,30.254908,[8],-97.692579,Location 50,https://www.atxstudiotour.com/location/location-50/
 "3411 E 5th St, Austin, TX 78702",13735,30.2541575,[8],-97.7047214,Location 49,https://www.atxstudiotour.com/location/location-49/
 "5305 Bolm Rd, Austin, TX 78721",13734,30.258306,[18],-97.691436,Location 48,https://www.atxstudiotour.com/location/location-48/
-"5305 Bolm Rd, Bay 9, Austin, TX 78721",13733,,[8],,Location 47,https://www.atxstudiotour.com/location/location-47/
+"5305 Bolm Rd, Bay 9, Austin, TX 78721",13733,30.258306,[8],-97.691436,Location 47,https://www.atxstudiotour.com/location/location-47/
 "3415 E 5th St, Austin, TX 78702",13732,30.254033,[8],-97.7045081,Location 46,https://www.atxstudiotour.com/location/location-46/
 "2801 I-35, Austin, TX 78741, USA",13731,30.2376267,[18],-97.7389898,Location 45,https://www.atxstudiotour.com/location/location-45/
 "2801 S I-35 Frontage Rd, Austin, TX 78741, USA",13730,,[8],,Location 44,https://www.atxstudiotour.com/location/location-44/
@@ -302,9 +302,9 @@ address,id,latitude,location_type,longitude,title,url
 "1312 E Cesar Chavez St, Austin, TX 78702",13703,30.2594595,[9],-97.7306345,Location 17,https://www.atxstudiotour.com/location/location-17/
 "1312 E Cesar Chavez St, Ste B, Austin, TX 78702",13702,30.2594595,[4],-97.7306345,Location 16,https://www.atxstudiotour.com/location/location-16/
 "1023 Springdale Rd, Austin, TX 78721",13701,30.2673527,[4],-97.6931123,Location 15,https://www.atxstudiotour.com/location/location-15/
-"1023 Springdale Rd, Bldg 6D, Austin, TX 78721",13700,,[16],,Location 14,https://www.atxstudiotour.com/location/location-14/
-"1023 Springdale Rd, Bldg 3, Austin, TX 78721",13699,,[8],,Location 13,https://www.atxstudiotour.com/location/location-13/
-"1023 Springdale Rd, Bldg 5, Austin, TX 78721",13698,,[4],,Location 12,https://www.atxstudiotour.com/location/location-12/
+"1023 Springdale Rd, Bldg 6D, Austin, TX 78721",13700,30.2673527,[16],-97.6931123,Location 14,https://www.atxstudiotour.com/location/location-14/
+"1023 Springdale Rd, Bldg 3, Austin, TX 78721",13699,30.2673527,[8],-97.6931123,Location 13,https://www.atxstudiotour.com/location/location-13/
+"1023 Springdale Rd, Bldg 5, Austin, TX 78721",13698,30.2673527,[4],-97.6931123,Location 12,https://www.atxstudiotour.com/location/location-12/
 "1211 E 11th St, Ste 200, Austin, TX 78702",13697,30.2679876,[4],-97.7266205,Location 11,https://www.atxstudiotour.com/location/location-11/
 "979 Springdale Rd, Ste 117, Austin, TX 78702",13696,30.2625839,[16],-97.6960711,Location 10,https://www.atxstudiotour.com/location/location-10/
 "979 Springdale Rd, Ste 99, Austin, TX 78702",13695,30.2625839,[8],-97.6960711,Location 9,https://www.atxstudiotour.com/location/location-9/
