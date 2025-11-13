@@ -75,7 +75,7 @@ def geocode_address(address: str, user_agent: str = "AustinStudioTourGeocoder/1.
     for attempt, addr in enumerate(addresses_to_try):
         # Add delay before retry attempt to respect rate limit
         if attempt > 0:
-            time.sleep(1.0)
+            time.sleep(1.1)
 
         # Parameters for the request
         params = {
@@ -130,7 +130,7 @@ def load_addresses_from_details(details_csv_path: str) -> dict:
     return addresses
 
 
-def update_locations_csv(locations_csv_path: str, addresses: dict, rate_limit_seconds: float = 1.0):
+def update_locations_csv(locations_csv_path: str, addresses: dict, rate_limit_seconds: float = 1.1):
     """
     Update austin_studio_tour_locations.csv with geocoded coordinates
 
@@ -221,7 +221,7 @@ def main():
     print("="*60)
     print(f"Reading addresses from: {details_csv}")
     print(f"Updating coordinates in: {locations_csv}")
-    print(f"Rate limit: 1 request per second")
+    print(f"Rate limit: 1 request per 1.1 seconds")
     print("="*60 + "\n")
 
     # Load addresses

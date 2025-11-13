@@ -42,14 +42,14 @@ The script will:
 2. **Smart Geocoding**:
    - First tries the full address with suite/unit numbers
    - If that fails, automatically retries without suite/unit info
-3. **Rate Limiting**: Waits 1 second between API requests to comply with Nominatim usage policy
+3. **Rate Limiting**: Waits 1.1 seconds between API requests to comply with Nominatim usage policy
 4. **Progress Tracking**: Shows real-time progress and results for each location
 5. **Resume Support**: Skips locations that already have coordinates, so you can safely re-run the script
 
 ## API Compliance
 
 The script follows Nominatim's usage requirements:
-- Maximum 1 request per second
+- 1 request per 1.1 seconds (conservative rate limiting)
 - Custom User-Agent: `AustinStudioTourGeocoder/1.0`
 - Valid Referer header pointing to the GitHub repository
 
@@ -67,7 +67,7 @@ Austin Studio Tour Geocoder
 ============================================================
 Reading addresses from: austin_studio_tour_details.csv
 Updating coordinates in: austin_studio_tour_locations.csv
-Rate limit: 1 request per second
+Rate limit: 1 request per 1.1 seconds
 ============================================================
 
 Loading addresses...
