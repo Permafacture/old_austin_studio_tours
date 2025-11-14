@@ -177,7 +177,7 @@ def main():
     icon_map = {
         'group': 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
         'hang': 'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
-        'cool': 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        'cool': 'http://maps.google.com/mapfiles/ms/icons/red-dot.png',
         'complex': 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png',
         'unclassified': 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png'  # Yellow for beige
     }
