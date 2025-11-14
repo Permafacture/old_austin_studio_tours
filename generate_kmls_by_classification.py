@@ -173,13 +173,13 @@ def main():
     all_location_nums = set(locations.keys())
     unclassified_nums = sorted(all_location_nums - classified_nums)
 
-    # Icon mapping for classifications using Google's standard colored pushpins
+    # Icon mapping for classifications using Google's standard dot markers
     icon_map = {
-        'group': 'http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png',
-        'hang': 'http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png',
-        'cool': 'http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png',
-        'complex': 'http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png',  # Yellow/orange
-        'unclassified': 'http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png'  # White/beige
+        'group': 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        'hang': 'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
+        'cool': 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        'complex': 'http://maps.google.com/mapfiles/ms/icons/orange-dot.png',
+        'unclassified': 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png'  # Yellow for beige
     }
 
     print(f"\nGenerating KML files...")
