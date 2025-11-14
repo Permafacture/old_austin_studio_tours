@@ -28,10 +28,19 @@ def remove_unit_info(address: str) -> str:
     Returns:
         Address with suite/unit info removed
     """
-    # Pattern to match suite/unit information
-    # Matches: ", Ste 123", ", Suite B-4", ", Unit 106", etc.
-    pattern = r',\s*(Ste|Suite|Unit|Apt|Apartment|#)\s+[A-Z0-9-]+(?:,|$)'
-    cleaned = re.sub(pattern, ',', address, flags=re.IGNORECASE)
+    cleaned = address
+
+    # Repeatedly remove suite/unit/building information until no more matches
+    # This handles cases like "Bldg 1, Ste 217" where there are multiple identifiers
+    pattern = r',\s*(Ste|Suite|Unit|Apt|Apartment|Bldg|Building|Bay|Studio|Garage\s+Studio|Fine\s+Arts\s+Center|#)\s+[A-Z0-9-]+(?=\s*,|\s*$)'
+    prev_cleaned = None
+    while prev_cleaned != cleaned:
+        prev_cleaned = cleaned
+        cleaned = re.sub(pattern, '', cleaned, flags=re.IGNORECASE)
+
+    # Also remove standalone descriptive building names after commas
+    building_names_pattern = r',\s*(Fine\s+Arts\s+Center|Garage\s+Studio)(?=\s*,|\s*$)'
+    cleaned = re.sub(building_names_pattern, '', cleaned, flags=re.IGNORECASE)
 
     # Clean up any double commas or trailing commas
     cleaned = re.sub(r',\s*,', ',', cleaned)

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>Austin Studio Tour Locations</name>
+<description>Selected locations from the Austin Studio Tour</description>
+<Placemark>
+<name>Location 90</name>
+<description><![CDATA[<h3>Location 90</h3><p><strong>Hosts:</strong><br/><a href="https://www.atxstudiotour.com/host/redline-studios/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/IMG_8968-scaled-e1762048509729.jpg" style="max-width:200px;height:auto;"/>RedLine Studios</a></p><hr/><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/luisa-pineda/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/bhutan_511.jpg" style="max-width:200px;height:auto;"/>LUISA PINEDA</a><br/><a href="https://www.atxstudiotour.com/art/redline-studios/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Divine_feminine_native.jpg" style="max-width:200px;height:auto;"/>RedLine Studios</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-90/">View on ATX Studio Tour</a></p>]]></description>
+<Point>
+<coordinates>-97.7297035,30.261772,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 47</name>
+<description><![CDATA[<h3>Location 47</h3><p><strong>Hosts:</strong><br/><a href="https://www.atxstudiotour.com/host/bolm-arts-gallery/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/u1616349239_A_sky_night_sky_that_has_a_simple_gradient_of_coo_224b8c78_774b_485c_b771_47fe1a389ad1_1.jpg" style="max-width:200px;height:auto;"/>Bolm Arts Gallery</a></p><hr/><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/bolm-arts-collective/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Bolmboutique.jpg" style="max-width:200px;height:auto;"/>Bolm Arts Collective</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-47/">View on ATX Studio Tour</a></p>]]></description>
+<Point>
+<coordinates>-97.691436,30.258306,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 122</name>
+<description><![CDATA[<h3>Location 122</h3><p><strong>Hosts:</strong><br/><a href="https://www.atxstudiotour.com/host/broad-studios-club-house/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/IMG_9421.jpg" style="max-width:200px;height:auto;"/>Broad Studios Club House</a></p><hr/><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/alyx-barnes/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Photoroom_20250907_195614.jpg" style="max-width:200px;height:auto;"/>Alyx Barnes</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-122/">View on ATX Studio Tour</a></p>]]></description>
+<Point>
+<coordinates>-97.6925421,30.2543111,0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>
