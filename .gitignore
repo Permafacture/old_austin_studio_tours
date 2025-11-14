@@ -1,3 +1,4 @@
 __pycache__/
 *.kml
 !old_austin_studio_tour.kml
+!studio_tour_*.kml
