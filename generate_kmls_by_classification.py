@@ -56,11 +56,15 @@ def generate_kml_with_custom_name(
     locations: Dict[int, dict],
     details: Dict[int, dict],
     output_file: str,
-    document_name: str
+    document_name: str,
+    color: str = None
 ) -> None:
     """
-    Generate KML file with custom document name.
+    Generate KML file with custom document name and optional color.
     Wraps generate_kml and temporarily modifies the output.
+
+    Args:
+        color: KML color in AABBGGRR format (e.g., 'ff0000ff' for blue)
     """
     import tempfile
     import shutil
@@ -77,7 +81,7 @@ def generate_kml_with_custom_name(
         # Generate using existing function
         generate_kml(location_numbers, locations, details, tmp_path)
 
-        # Read and modify the document name
+        # Read and modify the document name and add color style
         with open(tmp_path, 'r', encoding='utf-8') as f:
             content = f.read()
 
@@ -86,6 +90,28 @@ def generate_kml_with_custom_name(
             '<name>Austin Studio Tour Locations</name>',
             f'<name>{document_name}</name>'
         )
+
+        # Add color style if specified
+        if color:
+            style_section = f'''<Style id="customStyle">
+<IconStyle>
+<color>{color}</color>
+<scale>1.1</scale>
+</IconStyle>
+</Style>
+'''
+            # Insert style after Document description tag (first occurrence only)
+            content = content.replace(
+                '</description>\n<Placemark>',
+                f'</description>\n{style_section}<Placemark>',
+                1
+            )
+
+            # Add styleUrl to each Placemark
+            content = content.replace(
+                '<Placemark>\n<name>',
+                '<Placemark>\n<styleUrl>#customStyle</styleUrl>\n<name>'
+            )
 
         # Write to final destination
         with open(output_file, 'w', encoding='utf-8') as f:
@@ -146,6 +172,15 @@ def main():
     all_location_nums = set(locations.keys())
     unclassified_nums = sorted(all_location_nums - classified_nums)
 
+    # Color mapping for classifications (KML format: AABBGGRR)
+    color_map = {
+        'group': 'ff0000ff',      # Blue
+        'hang': 'ff00ff00',       # Green
+        'cool': 'ff0000ff',       # Blue
+        'complex': 'ff00A5FF',    # Orange
+        'unclassified': 'ffDCF5F5'  # Beige
+    }
+
     print(f"\nGenerating KML files...")
 
     # Generate KML for each classification
@@ -158,13 +193,15 @@ def main():
 
         output_file = f"{args.output_prefix}{classification}.kml"
         document_name = f"Austin Studio Tour - {classification.title()} Locations"
+        color = color_map.get(classification)
 
         generate_kml_with_custom_name(
             valid_locs,
             locations,
             details,
             output_file,
-            document_name
+            document_name,
+            color
         )
 
     # Generate KML for unclassified locations
@@ -181,7 +218,8 @@ def main():
         locations,
         details,
         output_file,
-        document_name
+        document_name,
+        color_map['unclassified']
     )
 
     print("\n✓ All KML files generated successfully!")

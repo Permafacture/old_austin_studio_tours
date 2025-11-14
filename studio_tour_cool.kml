@@ -3,7 +3,14 @@
 <Document>
 <name>Austin Studio Tour - Cool Locations</name>
 <description>Selected locations from the Austin Studio Tour</description>
+<Style id="customStyle">
+<IconStyle>
+<color>ff0000ff</color>
+<scale>1.1</scale>
+</IconStyle>
+</Style>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 50</name>
 <description><![CDATA[<h3>Location 50</h3><p><strong>Hosts:</strong><br/><a href="https://www.atxstudiotour.com/host/co-lab-projects/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/39FE3D96_6918_4880_A4ED_10D2FCDD227A_1_105_c.jpg" style="max-width:200px;height:auto;"/>Co-Lab Projects</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-50/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -11,6 +18,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 78</name>
 <description><![CDATA[<h3>Location 78</h3><p><strong>Hosts:</strong><br/><a href="https://www.atxstudiotour.com/host/aaron-michalovic/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/fe943e9d3cef-C6D58D12_D729_4358_9CB3_F15B490DFE41.jpg" style="max-width:200px;height:auto;"/>Aaron Michalovic</a></p><hr/><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/aaron-michalovic/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/C6D58D12_D729_4358_9CB3_F15B490DFE41.jpg" style="max-width:200px;height:auto;"/>Aaron Michalovic</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-78/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -18,6 +26,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 81</name>
 <description><![CDATA[<h3>Location 81</h3><p><strong>Hosts:</strong><br/><a href="https://www.atxstudiotour.com/host/blanton-art-design/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/IMG_0663.jpg" style="max-width:200px;height:auto;"/>Blanton Art &amp; Design</a></p><hr/><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/danny-resq/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/2020_10_22_Untitled_001.jpg" style="max-width:200px;height:auto;"/>Danny Resq</a><br/><a href="https://www.atxstudiotour.com/art/quincy-wakefield/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Screenshot_2025_09_14_at_7.29.58_PMa-1.jpg" style="max-width:200px;height:auto;"/>Quincy Wakefield</a><br/><a href="https://www.atxstudiotour.com/art/susannah-blanton/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Susannah_Blanton_1.jpg" style="max-width:200px;height:auto;"/>Susannah Blanton</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-81/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -25,6 +34,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 89</name>
 <description><![CDATA[<h3>Location 89</h3><p><strong>Hosts:</strong><br/><a href="https://www.atxstudiotour.com/host/pierce-paint/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Pierce_and_Paint_Studio_8.jpg" style="max-width:200px;height:auto;"/>Pierce &amp; Paint</a></p><hr/><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/anna-lisa-leal/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/20250706_Agave_Yogi_Sukhasana.jpg" style="max-width:200px;height:auto;"/>ANNA LISA LEAL</a><br/><a href="https://www.atxstudiotour.com/art/art-by-elina/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/7a62d464ae20-IMG_4313-1.jpg" style="max-width:200px;height:auto;"/>ART BY ELINA</a><br/><a href="https://www.atxstudiotour.com/art/dorothy-nottingham/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/DorothyNottingham_Headshot3.jpg" style="max-width:200px;height:auto;"/>Dorothy Nottingham</a><br/><a href="https://www.atxstudiotour.com/art/kandice-pierce/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Kandice_with_Ocotillo.jpg" style="max-width:200px;height:auto;"/>Kandice Pierce</a><br/><a href="https://www.atxstudiotour.com/art/shelby-criswell-at-pierce-paint/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/BYUnsSCZgYAGjag7EQuaUVVvElBc6m649TvG2r8xW9I.jpg" style="max-width:200px;height:auto;"/>Shelby Criswell at Pierce &amp; Paint</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-89/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -32,6 +42,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 95</name>
 <description><![CDATA[<h3>Location 95</h3><p><strong>Hosts:</strong><br/><a href="https://www.atxstudiotour.com/host/4th-street-gallery/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Orchid_1_for_studio_tour_2025-1.jpg" style="max-width:200px;height:auto;"/>4th Street Gallery</a></p><hr/><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/brian-william-kirchner/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/AST25_Anundance.jpg" style="max-width:200px;height:auto;"/>Brian William Kirchner</a><br/><a href="https://www.atxstudiotour.com/art/cori-wilbanks/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Sayagata_CoriWilbanks.jpg" style="max-width:200px;height:auto;"/>Cori Wilbanks</a><br/><a href="https://www.atxstudiotour.com/art/j-michelle-galek/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/IMG_5857.jpg" style="max-width:200px;height:auto;"/>J. Michelle Galek</a><br/><a href="https://www.atxstudiotour.com/art/matthew-colin-ross/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/IMG_2787.jpg" style="max-width:200px;height:auto;"/>Matthew Colin Ross</a><br/><a href="https://www.atxstudiotour.com/art/patrick-moran/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/IMG_5985.jpg" style="max-width:200px;height:auto;"/>Patrick Moran</a><br/><a href="https://www.atxstudiotour.com/art/richard-rutner/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/AST_Social519.jpg" style="max-width:200px;height:auto;"/>Richard Rutner</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-95/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -39,6 +50,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 104</name>
 <description><![CDATA[<h3>Location 104</h3><p><strong>Hosts:</strong><br/><a href="https://www.atxstudiotour.com/host/haskell-studio-garden/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Yard_1_1.jpg" style="max-width:200px;height:auto;"/>Haskell Studio Garden</a></p><hr/><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/innerloop-glass-katie-pendrey/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/35U_Thfy94oBrt3L-OG7n0fQsPtguBEvPNRzeuNJ_70.jpg" style="max-width:200px;height:auto;"/>Innerloop Glass-Katie Pendrey</a><br/><a href="https://www.atxstudiotour.com/art/jessica-lorenzana/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Jess09_Old_Soul__New_Bloom.jpg" style="max-width:200px;height:auto;"/>Jessica Lorenzana</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-104/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -46,6 +58,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 105</name>
 <description><![CDATA[<h3>Location 105</h3><p><strong>Hosts:</strong><br/><a href="https://www.atxstudiotour.com/host/la-petite-provence-austin/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/dced53db4799-Chaussonnet_Studio_2.jpg" style="max-width:200px;height:auto;"/>La Petite Provence Austin</a></p><hr/><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/la-petite-provence-collective/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Chaussonnet_Valerie__Le_Cap_Canaille.jpg" style="max-width:200px;height:auto;"/>La Petite Provence Collective</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-105/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -53,6 +66,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 112</name>
 <description><![CDATA[<h3>Location 112</h3><p><strong>Hosts:</strong><br/><a href="https://www.atxstudiotour.com/host/troy-a-allen-studio/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/IMG_6506.jpg" style="max-width:200px;height:auto;"/>Troy A Allen Studio</a></p><hr/><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/nirav-shah/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/PangongTso.jpg" style="max-width:200px;height:auto;"/>Nirav Shah</a><br/><a href="https://www.atxstudiotour.com/art/troy-a-allen/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/IMG_9903-scaled-e1762120698754.jpg" style="max-width:200px;height:auto;"/>Troy A Allen</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-112/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -60,6 +74,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 126</name>
 <description><![CDATA[<h3>Location 126</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/4903designs-by-meghan-waller/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/momentum_canvas_scan.jpg" style="max-width:200px;height:auto;"/>4903Designs by Meghan Waller</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-126/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -67,6 +82,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 133</name>
 <description><![CDATA[<h3>Location 133</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/andrew-long/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/AVAIL_20x20_Configure.jpg" style="max-width:200px;height:auto;"/>Andrew Long</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-133/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -74,6 +90,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 136</name>
 <description><![CDATA[<h3>Location 136</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/anna-mallam/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Anna_Mallam_Photos1.jpg" style="max-width:200px;height:auto;"/>Anna Mallam</a><br/><a href="https://www.atxstudiotour.com/art/lynda-young-kaffie/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Young_Kaffie__Lynda__Dawning_5.jpg" style="max-width:200px;height:auto;"/>Lynda Young Kaffie</a><br/><a href="https://www.atxstudiotour.com/art/victoria-corbett/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Corbett_Victoria_AliveContraryToBelief_MixedMedia_16_x20_.jpg" style="max-width:200px;height:auto;"/>Victoria Corbett</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-136/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -81,6 +98,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 137</name>
 <description><![CDATA[<h3>Location 137</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/annie-compton/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/AnnieB.jpg" style="max-width:200px;height:auto;"/>Annie Compton</a><br/><a href="https://www.atxstudiotour.com/art/greg-pierce/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/DSCN0700.jpg" style="max-width:200px;height:auto;"/>Greg Pierce</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-137/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -88,6 +106,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 139</name>
 <description><![CDATA[<h3>Location 139</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/april-garner/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Laguna_Mythic_50x50.jpg" style="max-width:200px;height:auto;"/>April Garner</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-139/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -95,6 +114,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 141</name>
 <description><![CDATA[<h3>Location 141</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/aslan-french/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/jcklpe_httpss.mj.runGZo7FJ7IIIg_tropical_Hawaiian_print_patte_540edf4f_0744_4eb2_bd9c_65f5b6e24c96_3.jpg" style="max-width:200px;height:auto;"/>Aslan French</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-141/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -102,6 +122,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 145</name>
 <description><![CDATA[<h3>Location 145</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/brandon-munley/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/fox-scaled.jpg" style="max-width:200px;height:auto;"/>Brandon Munley</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-145/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -109,6 +130,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 148</name>
 <description><![CDATA[<h3>Location 148</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/c-chick-nichols/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/72cab127ef18-5151449-1.jpg" style="max-width:200px;height:auto;"/>C. Chick-Nichols</a><br/><a href="https://www.atxstudiotour.com/art/roni-zulu-fine-art-works/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Lamentatin_of_Juliet.jpg" style="max-width:200px;height:auto;"/>Roni Zulu Fine Art Works</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-148/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -116,6 +138,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 158</name>
 <description><![CDATA[<h3>Location 158</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/clare-wuellners-blue-victory-gallery-art-studio/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Wuellner.SunWorshipper.100.1920x1500.jpg" style="max-width:200px;height:auto;"/>Clare Wuellner’s Blue Victory Gallery Art Studio</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-158/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -123,6 +146,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 161</name>
 <description><![CDATA[<h3>Location 161</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/daniel-arredondo/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/IMG_1879.jpg" style="max-width:200px;height:auto;"/>Daniel Arredondo</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-161/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -130,6 +154,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 165</name>
 <description><![CDATA[<h3>Location 165</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/david-hefner/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/BBDEAE9F_4302_4E71_B543_C0BE3AF2BD49.jpg" style="max-width:200px;height:auto;"/>David Hefner</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-165/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -137,6 +162,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 166</name>
 <description><![CDATA[<h3>Location 166</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/david-macias/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/DMaciasAmericasNationalMammal.jpg" style="max-width:200px;height:auto;"/>David Macias</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-166/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -144,6 +170,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 174</name>
 <description><![CDATA[<h3>Location 174</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/en-sanctum/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Grithband_Shopify_Page_1.jpg" style="max-width:200px;height:auto;"/>En Sanctum</a><br/><a href="https://www.atxstudiotour.com/art/hunt-design/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Lake_travis_square.jpg" style="max-width:200px;height:auto;"/>Hunt design</a><br/><a href="https://www.atxstudiotour.com/art/mark-macek/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Mark_Macek0456_edit_copy.jpg" style="max-width:200px;height:auto;"/>Mark Maček</a><br/><a href="https://www.atxstudiotour.com/art/noelle-eileen-studio/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/NEM01.jpg" style="max-width:200px;height:auto;"/>Noelle Eileen Studio</a><br/><a href="https://www.atxstudiotour.com/art/rachel-koper/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/koper_mountain2.jpg" style="max-width:200px;height:auto;"/>Rachel Koper</a><br/><a href="https://www.atxstudiotour.com/art/rhodes-hinman-craft-design-rhcd-studio/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/95BC5F2B_4E84_4751_99A1_F8BCE7C85282.jpg" style="max-width:200px;height:auto;"/>Rhodes Hinman Craft + design (RHCD Studio)</a><br/><a href="https://www.atxstudiotour.com/art/scott-macleod-serious-projects/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/USS_Jimmy_Carter_copy.jpg" style="max-width:200px;height:auto;"/>Scott MacLeod / Serious Projects</a><br/><a href="https://www.atxstudiotour.com/art/via-boley/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Withholding__1_.jpg" style="max-width:200px;height:auto;"/>Via Boley</a><br/><a href="https://www.atxstudiotour.com/art/will-mayo-nordsprings/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/NS_x_AST_2.jpg" style="max-width:200px;height:auto;"/>Will Mayo, Nordsprings</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-174/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -151,6 +178,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 186</name>
 <description><![CDATA[<h3>Location 186</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/holly-sabiston/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Sabiston_Holly_25AST___1a-2.jpg" style="max-width:200px;height:auto;"/>Holly Sabiston</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-186/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -158,6 +186,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 188</name>
 <description><![CDATA[<h3>Location 188</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/hunter-ash/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Dwell_With_You_Hunter_Ash.jpg" style="max-width:200px;height:auto;"/>Hunter Ash</a><br/><a href="https://www.atxstudiotour.com/art/libby-barret/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/IMG_4686.jpg" style="max-width:200px;height:auto;"/>Libby Barret</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-188/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -165,6 +194,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 189</name>
 <description><![CDATA[<h3>Location 189</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/ian-mcenroe/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/McEnroe_Ian_Cromatic257_.jpg" style="max-width:200px;height:auto;"/>Ian McEnroe</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-189/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -172,6 +202,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 197</name>
 <description><![CDATA[<h3>Location 197</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/jess-king/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/JessKing_48x60.jpg" style="max-width:200px;height:auto;"/>Jess King</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-197/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -179,6 +210,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 200</name>
 <description><![CDATA[<h3>Location 200</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/john-mulvany/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/John_Mulvany_8.jpg" style="max-width:200px;height:auto;"/>John Mulvany</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-200/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -186,6 +218,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 206</name>
 <description><![CDATA[<h3>Location 206</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/karen-offutt/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/TinType_752790449.697005.jpg" style="max-width:200px;height:auto;"/>Karen Offutt</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-206/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -193,6 +226,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 210</name>
 <description><![CDATA[<h3>Location 210</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/kent-burress/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/IMG_1247a-1.jpg" style="max-width:200px;height:auto;"/>Kent Burress</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-210/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -200,6 +234,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 212</name>
 <description><![CDATA[<h3>Location 212</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/kris-ohlinger/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/IMG_0493-2.jpg" style="max-width:200px;height:auto;"/>Kris Ohlinger</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-212/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -207,6 +242,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 217</name>
 <description><![CDATA[<h3>Location 217</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/lindsey-millikan/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/millikan_ast2025_1.jpg" style="max-width:200px;height:auto;"/>Lindsey Millikan</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-217/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -214,6 +250,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 229</name>
 <description><![CDATA[<h3>Location 229</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/meredith-guenveur/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/IMG_8193.jpg" style="max-width:200px;height:auto;"/>Meredith Guenveur</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-229/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -221,6 +258,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 233</name>
 <description><![CDATA[<h3>Location 233</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/nisha-khanna/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Nisha_Khanna_Image_5.jpg" style="max-width:200px;height:auto;"/>Nisha Khanna</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-233/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -228,6 +266,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 241</name>
 <description><![CDATA[<h3>Location 241</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/r-lee-dockery/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/RLeeDockery_east_image_1.jpg" style="max-width:200px;height:auto;"/>R. Lee Dockery</a><br/><a href="https://www.atxstudiotour.com/art/rosalie-anderson/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/anderson_r_palms.jpg" style="max-width:200px;height:auto;"/>Rosalie Anderson</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-241/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -235,6 +274,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 242</name>
 <description><![CDATA[<h3>Location 242</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/randall-soileau-randalls-stained-glass-studio/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/IMG_1164.jpg" style="max-width:200px;height:auto;"/>Randall Soileau – Randall’s Stained Glass Studio</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-242/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -242,6 +282,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 247</name>
 <description><![CDATA[<h3>Location 247</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/salvador-rodriguez-art/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Whispers_of_the_Mine__Lost_Mine_at_Bigbend_Medium.jpg" style="max-width:200px;height:auto;"/>Salvador Rodriguez Art</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-247/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -249,6 +290,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 250</name>
 <description><![CDATA[<h3>Location 250</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/shakti-sarkin/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Dervish5redowsig_2025AST_L.jpg" style="max-width:200px;height:auto;"/>Shakti Sarkin</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-250/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -256,6 +298,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 251</name>
 <description><![CDATA[<h3>Location 251</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/sharon-zeugin/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Zeugincopy.jpg" style="max-width:200px;height:auto;"/>Sharon Zeugin</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-251/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -263,6 +306,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 262</name>
 <description><![CDATA[<h3>Location 262</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/trey-abraham/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/pattern_emerge_c.jpg" style="max-width:200px;height:auto;"/>Trey Abraham</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-262/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -270,6 +314,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 263</name>
 <description><![CDATA[<h3>Location 263</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/valerie-fowler/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/Valerie_Fowler_ALL_ABOUT_EVE_.jpg" style="max-width:200px;height:auto;"/>Valerie Fowler</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-263/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -277,6 +322,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 267</name>
 <description><![CDATA[<h3>Location 267</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/yamin-li/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/MG_7007.jpg" style="max-width:200px;height:auto;"/>Yamin Li</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-267/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
@@ -284,6 +330,7 @@
 </Point>
 </Placemark>
 <Placemark>
+<styleUrl>#customStyle</styleUrl>
 <name>Location 268</name>
 <description><![CDATA[<h3>Location 268</h3><p><strong>Artists:</strong><br/><a href="https://www.atxstudiotour.com/art/zezelia-olson/"><img src="https://www.atxstudiotour.com/wp-content/uploads/2025/10/2024_10_09_Zezelia_Olson_001_small.jpg" style="max-width:200px;height:auto;"/>Zezelia Olson</a></p><hr/><p><a href="https://www.atxstudiotour.com/location/location-268/">View on ATX Studio Tour</a></p>]]></description>
 <Point>
