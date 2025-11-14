@@ -5,8 +5,9 @@
 <description>Selected locations from the Austin Studio Tour</description>
 <Style id="customStyle">
 <IconStyle>
-<color>ff0000ff</color>
-<scale>1.1</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href>
+</Icon>
 </IconStyle>
 </Style>
 <Placemark>

@@ -57,14 +57,14 @@ def generate_kml_with_custom_name(
     details: Dict[int, dict],
     output_file: str,
     document_name: str,
-    color: str = None
+    icon_url: str = None
 ) -> None:
     """
-    Generate KML file with custom document name and optional color.
+    Generate KML file with custom document name and optional icon.
     Wraps generate_kml and temporarily modifies the output.
 
     Args:
-        color: KML color in AABBGGRR format (e.g., 'ff0000ff' for blue)
+        icon_url: URL to the icon image to use for markers
     """
     import tempfile
     import shutil
@@ -81,7 +81,7 @@ def generate_kml_with_custom_name(
         # Generate using existing function
         generate_kml(location_numbers, locations, details, tmp_path)
 
-        # Read and modify the document name and add color style
+        # Read and modify the document name and add icon style
         with open(tmp_path, 'r', encoding='utf-8') as f:
             content = f.read()
 
@@ -91,12 +91,13 @@ def generate_kml_with_custom_name(
             f'<name>{document_name}</name>'
         )
 
-        # Add color style if specified
-        if color:
+        # Add icon style if specified
+        if icon_url:
             style_section = f'''<Style id="customStyle">
 <IconStyle>
-<color>{color}</color>
-<scale>1.1</scale>
+<Icon>
+<href>{icon_url}</href>
+</Icon>
 </IconStyle>
 </Style>
 '''
@@ -172,13 +173,13 @@ def main():
     all_location_nums = set(locations.keys())
     unclassified_nums = sorted(all_location_nums - classified_nums)
 
-    # Color mapping for classifications (KML format: AABBGGRR)
-    color_map = {
-        'group': 'ff0000ff',      # Blue
-        'hang': 'ff00ff00',       # Green
-        'cool': 'ff0000ff',       # Blue
-        'complex': 'ff00A5FF',    # Orange
-        'unclassified': 'ffDCF5F5'  # Beige
+    # Icon mapping for classifications using Google's standard colored pushpins
+    icon_map = {
+        'group': 'http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png',
+        'hang': 'http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png',
+        'cool': 'http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png',
+        'complex': 'http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png',  # Yellow/orange
+        'unclassified': 'http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png'  # White/beige
     }
 
     print(f"\nGenerating KML files...")
@@ -193,7 +194,7 @@ def main():
 
         output_file = f"{args.output_prefix}{classification}.kml"
         document_name = f"Austin Studio Tour - {classification.title()} Locations"
-        color = color_map.get(classification)
+        icon_url = icon_map.get(classification)
 
         generate_kml_with_custom_name(
             valid_locs,
@@ -201,7 +202,7 @@ def main():
             details,
             output_file,
             document_name,
-            color
+            icon_url
         )
 
     # Generate KML for unclassified locations
@@ -219,7 +220,7 @@ def main():
         details,
         output_file,
         document_name,
-        color_map['unclassified']
+        icon_map['unclassified']
     )
 
     print("\n✓ All KML files generated successfully!")
